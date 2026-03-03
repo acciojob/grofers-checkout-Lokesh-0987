@@ -4,8 +4,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 
-  // Select correct class name from your HTML
-  const prices = document.querySelectorAll(".price");
+  const prices = document.querySelectorAll(".prices");
 
   let total = 0;
 
@@ -13,18 +12,17 @@ const getSum = () => {
     total += parseFloat(price.textContent);
   });
 
-  // Remove old total row if exists
-  const oldTotal = document.getElementById("total-row");
-  if (oldTotal) oldTotal.remove();
+  // Remove old answer if exists
+  const oldAns = document.getElementById("ans");
+  if (oldAns) oldAns.remove();
 
   const table = document.querySelector("table");
-
   const newRow = document.createElement("tr");
-  newRow.id = "total-row";
-
   const newCell = document.createElement("td");
+
   newCell.colSpan = 2;
-  newCell.textContent = `Total Price: ${total}`;
+  newCell.id = "ans";
+  newCell.textContent = total;
 
   newRow.appendChild(newCell);
   table.appendChild(newRow);
