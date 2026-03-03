@@ -1,2 +1,69 @@
 
 /* Your CSS Code here. */
+/* Page Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+caption {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Zebra Striping */
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styling */
+button {
+  margin-top: 20px;
+  padding: 10px 18px;
+  font-size: 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Total Row */
+#total-row td {
+  font-weight: bold;
+  background-color: #e8f5e9;
+  font-size: 18px;
+}
